@@ -1,47 +1,37 @@
 ---
 layout: default
 title: Homepage
-news: 
-- title: Big Sale
-  description: Exciting things are happening
-  date: 13th Jan
-  category: promo
-  url: https://www.sale.com
-- title: New Puppy
-  description: Woof Woof
-  date: 4th April
-  category: BTS 
-  url: https://www.sale.com
-- title: Fresh Salads 
-  description: Free food to make friends
-  date: 18th July
-  category: perks
-  url: https://www.sale.com 
-- title: Houdini's Tricks
-  description: Free food to make friends
-  date: 18th July
-  category: perks
-  url: https://www.sale.com 
+challenges: 
+ - title: Coding Challenge
+   description: HTML % CSS
+   url: https://www.instituteofcode.com/assets/images/cutout-3.png
+ - title: Instagram Challenge
+   description: Social Foundations
+   url: https://www.instituteofcode.com/assets/images/cutout-2.png
+ - title: Photography Challenge
+   description: Mobile & DSLR
+   url: https://www.instituteofcode.com/assets/images/cutout-1.png  
 
 ---
 
-<section class="grid-spaceBetween mob-padded-0 latest-news padded bg-featured">
-      
-    {% for item in page.news %}
-    <!----First Card---->
-      <div class="col-3_xs-8 card">
-        <div class="bg-image portrait">
-          <span> {{item.category}} </span>
-        </div>  
-        <div class="post-info">
-          <p class="date"> {{item.date}} </p>
+
+  <section class="center padded mob-padded-0">
+    <h2> Upcoming Challenges </h2>
+    
+    <div class="grid horizontal-scroll"> 
+
+    {% for item in page.challenges %}
+   <!------ Card 1------->
+      <div class="col-4_xs-11 padded-05">
+        <div class="card bg-yellow">
           <h3> {{item.title}} </h3>
-          <p> {{item.description}} </p>
-           <a href="{{item.url}}"> Find out more &nbsp; &rarr;</a>
+          <h4> {{item.description}} </h4>
+          <img src="{{item.url}}">
         </div>
-    </div>
+      </div>
 
     {% endfor %}
-
+    
+   
   </section>
 

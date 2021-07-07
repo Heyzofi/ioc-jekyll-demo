@@ -1,110 +1,77 @@
-
 *{
-    padding: 0; 
-    margin: 0;
+    padding: 0;
+    margin:0;
     box-sizing: border-box;
-   }
-   div{
-     /*border: 1px solid grey;*/
-   }
-   body{
-     font-family: 'Source Sans Pro', sans-serif;
-   }
-   
-   /* Universal Styles*/
-   h2,h3,h4,h5,h6{
-     line-height: 1.1;
-     margin-bottom: 0.8rem;
-   }
-   p{
-     line-height: 1.2;
-     font-size: 0.9rem;
-     margin-bottom: 0.8rem;
-   }
-   a{
-     font-size: 0.8rem;
-     text-decoration: none;
-   }
-   /* Utility Classes*/
-   
-   .padded {padding: 5%;}
-   .padded-1 {padding: 1rem;}
-   
-   .bg-featured {background-color: #341f97;}
-   .bg-light {background-color: white;}
-   
-   .light-text {color: white;}
-   
-   .bg-image{
-     background-color: light-blue;
-     background-image: url('https://source.unsplash.com/EPr4Lbco5Qc');
-     background-size: cover;
-     background-position: 50% 60%;
-     padding: 0.5rem;
-     padding-bottom: 40%;
-     color: white;
-   }
-   
-   .bg-image-medusa{
-     background-color: light-blue;
-     background-image: url('https://source.unsplash.com/61zR8FIVLZ4');
-     background-size: cover;
-     background-position: 50% 55%;
-     padding: 0.5rem;
-     padding-bottom: 40%;
-     color: white;
-     
-   }
-   
-   /* Card Styles*/
-   
-   .card{
-     background-color: white;
-     padding: 0;
-     border: 5px solid #341f97;
-   }
-   
-   .bg-image span{
-     text-transform: uppercase;
-     font-weight: 600;
-   }
-
-   .portrait{
-       padding-bottom: 80%;
-   }
-   
-   .post-info{
-     padding: 1rem;
-   }
-   
-   .date{
-     font-size: 0.8rem;
-     color: rgb(90,90,90);
-   }
-   .card a{
-     display: inline-block;
-     margin-top: 1rem;
-   }
-   
-   @media(max-width: 36em) {
-     .horizontal-scroll {
-       overflow-x: auto;
+  }
+  body{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  div{
+    /*border: 1px solid grey;*/
+  }
+  img{
+    max-width: 100%;
+    /*border: 1px solid orange;*/
+    display: block;
+  }
+  [class*=col-] {
+    padding: 0;
+  }
+  
+  /* Card Styles */
+  .card{
+    padding-top: 1.5rem;
+    color: white;
+    border-radius: 5px;
+  }
+  .card:hover{
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 20%), 0 10px 10px -5px rgb(0 0 0 / 20%);
+  }
+  
+  .card h3{
+    font-size: 1.8rem;
+  }
+  .card img{
+    margin-top: -2.5rem;
+  }
+  
+  /* Universal Styles*/
+  h2,h3,h4,h5,h6{
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+  /* Utility Classes*/
+  
+  .padded {padding: 5%;}
+  .padded-1 {padding: 1rem;}
+  .padded-05 {padding: 0.5rem;}
+  
+  .bg-yellow {background-color: #f9ba4e;}
+  .bg-blue {background-color: #c6e1e8;}
+  .bg-red {background-color: #c86757;}
+  .bg-light {background-color: white;}
+  
+  .light-text {color: white;}
+  .center{
+    text-align: center;
+  }
+  
+  @media(max-width: 36em) {
+    .horizontal-scroll {
+     overflow-x: auto;
       flex-wrap: nowrap;
-   }
-     .latest-news .card{
-       margin: 0.2rem;
-       margin-bottom: 5%;
-     }
-     .latest-news .card:first-child {
-       margin-left: 1.5rem;
-     }
-     .latest-news .card:last-child {
-       margin-right: 1.5rem;
-     }
-     .mob-padded-0{
-      padding:0; 
-     }
-     .mob-padded{
-       padding: 5%;
-     }
-   }
+      padding-left:1rem;
+      padding-right:1rem;
+      padding-bottom: 5%;
+    }
+    
+    .card img{
+    margin-top: -25%;
+  }
+      
+    .mob-padded-0{
+        padding-left:0;
+        padding-right:0;
+      }
+  }
+  
