@@ -14,6 +14,7 @@
     /*border: 1px solid orange;*/
     display: block;
   }
+
   [class*=col-] {
     padding: 0;
   }
@@ -31,6 +32,7 @@
   .card h3{
     font-size: 1.8rem;
   }
+
   .card img{
     margin-top: -2.5rem;
   }
@@ -67,11 +69,11 @@
     
     .card img{
     margin-top: -25%;
-  }
+    }
       
     .mob-padded-0{
         padding-left:0;
         padding-right:0;
       }
-  }
+    }
   

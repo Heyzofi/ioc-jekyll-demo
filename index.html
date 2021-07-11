@@ -4,12 +4,15 @@ title: Homepage
 challenges: 
  - title: Coding Challenge
    description: HTML % CSS
+   class: "bg-yellow"
    url: https://www.instituteofcode.com/assets/images/cutout-3.png
  - title: Instagram Challenge
    description: Social Foundations
+   class: "bg-blue"
    url: https://www.instituteofcode.com/assets/images/cutout-2.png
  - title: Photography Challenge
    description: Mobile & DSLR
+   class: "bg-red"
    url: https://www.instituteofcode.com/assets/images/cutout-1.png  
 
 ---
@@ -23,7 +26,7 @@ challenges:
     {% for item in page.challenges %}
    <!------ Card 1------->
       <div class="col-4_xs-11 padded-05">
-        <div class="card bg-yellow">
+        <div class="card {{item.class}}">
           <h3> {{item.title}} </h3>
           <h4> {{item.description}} </h4>
           <img src="{{item.url}}">
