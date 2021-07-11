@@ -58,7 +58,7 @@
     text-align: center;
   }
   
-  @media(max-width: 36em) {
+  @media(max-width: 36em){
     .horizontal-scroll {
      overflow-x: auto;
       flex-wrap: nowrap;
